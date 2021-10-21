@@ -1,0 +1,125 @@
+.items-list {
+  display: flex;
+
+  justify-content: center;
+  margin-bottom: 50px;
+
+  cursor: pointer;
+}
+
+.items-list .site-nav-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Container  gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+
+  margin-left: calc(-1 * var(--gallery-gap-magin));
+  margin-top: calc(-1 * var(--gallery-gap-magin));
+
+  /* outline: 2px solid tomato; */
+}
+
+.gallery > .gallery-item {
+  flex-basis: calc(100% / 3 - var(--gallery-gap-magin));
+
+  margin-left: var(--gallery-gap-magin);
+  margin-top: var(--gallery-gap-magin);
+  /* box-shadow: var(--card-shadow); */
+  border: 1px solid #eeeeee;
+}
+
+.gallery-item:hover,
+.gallery-item:active {
+  box-shadow: var(--card-shadow);
+}
+
+.gallery-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-hover-text {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 322px;
+  height: 166.89px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+
+  opacity: 0;
+  transition: 250ms opacity linear;
+}
+
+.gallery-thumb:hover .gallery-hover-text {
+  opacity: 1;
+}
+
+.gallery-thumb:hover::before {
+  opacity: 1;
+  transition: 250ms opacity linear;
+}
+
+.gallery-thumb::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  /* opacity: 0; */
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
+}
+
+.gallery-item:hover .gallery-thumb::before {
+  transform: translateY(0%);
+}
+
+.gallery-item:hover .gallery-thumb::before {
+  transform: translateY(0%);
+}
+
+.gallery-titel {
+  margin-top: 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--titel-text-color);
+}
+
+.gallery-text {
+  margin-top: 19px;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.gallery-content {
+  padding: 5px 24px 20px 24px;
+}
