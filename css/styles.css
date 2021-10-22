@@ -194,17 +194,24 @@ img {
   margin-left: 50px;
 }
 
-.auth-icon-contact {
-  fill: var(--primary-text-color);
-}
+.auth-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-.auth-icon-contact:hover,
-.auth-icon-contact:active {
-  fill: var(--accent-text-color);
+  color: var(--primary-text-color);
 }
 
 .auth-icon {
+  fill: currentColor;
   margin-right: 10px;
+}
+
+.auth-nav-link:hover,
+.auth-nav-link:active {
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 /* продолжение Header */
@@ -216,15 +223,6 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--titel-text-color);
-}
-
-.auth-nav-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--primary-text-color);
 }
 
 .current {
@@ -592,6 +590,9 @@ img {
 
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -602,15 +603,29 @@ img {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 
   min-height: 581px;
   min-width: 528px;
 
+  border-radius: 4px;
+
   background-color: rgba(255, 255, 255, 1);
+}
+
+.modal-button {
+  position: absolute;
+
+  right: 8px;
+  top: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 /* Footer */
@@ -630,9 +645,6 @@ img {
   margin: 0px;
   margin-bottom: 20px; */
   margin-right: 70px;
-}
-.footer-box {
-  margin-left: 30px;
 }
 
 .logo-footer {
@@ -712,8 +724,22 @@ img {
 }
 
 /* Container  gallery */
+.items-list {
+  display: flex;
 
-/* .gallery {
+  justify-content: center;
+  margin-bottom: 50px;
+
+  cursor: pointer;
+}
+
+.items-list .site-nav-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* Container  gallery */
+
+.gallery {
   display: flex;
   flex-wrap: wrap;
 
@@ -721,72 +747,62 @@ img {
   margin: 0px;
   list-style: none;
 
-  margin-left: calc(-1 * var(--gallery-gap-magin));
-  margin-top: calc(-1 * var(--gallery-gap-magin));
-
+  margin-right: calc(-1 * var(--gallery-gap-magin));
+  margin-bottom: calc(-1 * var(--gallery-gap-magin));
 }
 
 .gallery > .gallery-item {
   flex-basis: calc(100% / 3 - var(--gallery-gap-magin));
 
-  margin-left: var(--gallery-gap-magin);
-  margin-top: var(--gallery-gap-magin);
+  margin-right: var(--gallery-gap-magin);
+  margin-bottom: var(--gallery-gap-magin);
+
   border: 1px solid #eeeeee;
 }
 
-.gallery-item:hover,
-.gallery-item:active {
+.gallery > .gallery-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-link:hover,
+.gallery-link:active {
   box-shadow: var(--card-shadow);
 }
 
-.gallery-thumb {
+.gallery-item:hover .gallery-top-text {
+  transform: translateY(0);
+}
+.gallery-top-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
-.gallery-hover-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 322px;
-  height: 166.89px;
-
+.gallery-top-text {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
 
-  color: var(--white-color);
+  color: #ffffff;
 
-  opacity: 0;
-  transition: 250ms opacity linear;
-}
+  padding-top: 62.58px;
+  padding-bottom: 62.58px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--accent-text-color);
 
-.gallery-thumb:hover .gallery-hover-text {
-  opacity: 1;
-}
-
-.gallery-thumb:hover::before {
-  opacity: 1;
-  transition: 250ms opacity linear;
-}
-
-.gallery-thumb::before {
-  display: inline-block;
   position: absolute;
-  content: "";
-
-  width: 100%;
+  top: 0;
+  left: 0;
   height: 100%;
-
-  background-color: rgba(33, 150, 243, 0.9);
-
-  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
 }
 
 .gallery-titel {
-  margin-top: 20px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -796,7 +812,7 @@ img {
 }
 
 .gallery-text {
-  margin-top: 19px;
+  margin-top: 4px;
 
   font-size: 16px;
   line-height: 1.87;
@@ -806,5 +822,5 @@ img {
 }
 
 .gallery-content {
-  padding: 5px 24px 20px 24px;
-} */
+  padding: 20px 24px 20px 24px;
+}
