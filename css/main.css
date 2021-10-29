@@ -406,15 +406,15 @@ html {
   background-color: var(--background-command);
 }
 
-.command__list {
+.command-list {
   display: flex;
 }
 
-.command__list .command__list-avatar:not(:last-child) {
+.command-list .command-list__avatar:not(:last-child) {
   margin-right: 30px;
 }
 
-.command__list-box {
+.command_list__box {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--white-color);
@@ -422,7 +422,7 @@ html {
   border-radius: 0px 0px 4px 4px;
 }
 
-.command__list-text {
+.command-list__text {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -432,7 +432,7 @@ html {
   color: var(--titel-text-color);
 }
 
-.command__list-desc {
+.command-list__desc {
   margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
