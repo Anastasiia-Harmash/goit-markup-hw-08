@@ -159,7 +159,7 @@ html {
 }
 
 /* portfolio - button  */
-.portfolio-button {
+.button__portfolio {
   font-family: inherit;
   justify-content: center;
   padding: 6px 22px;
@@ -175,7 +175,7 @@ html {
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
-.portfolio-button:hover, .portfolio-button:focus, .portfolio-button:active {
+.button__portfolio:hover, .button__portfolio:focus, .button__portfolio:active {
   color: var(--white-color);
   background-color: var(--accent-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -647,11 +647,11 @@ html {
   cursor: pointer;
 }
 
-.portfolio-list-items {
+.portfolio-list__items {
   margin-right: 8px;
 }
 
-.portfolio-list .portfolio-list-items:not(:last-child) {
+.portfolio-list .portfolio-list__items:not(:last-child) {
   margin-right: 8px;
 }
 
