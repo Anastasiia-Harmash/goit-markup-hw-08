@@ -136,7 +136,7 @@ html {
   background-color: var(--accent-text-color);
 }
 
-.button-footer {
+.button__footer {
   align-items: center;
   margin-left: 12px;
   padding-top: 10px;
@@ -535,18 +535,17 @@ html {
   margin-bottom: 50px;
 }
 
-/* Footer */
-.footer-nav {
+.footer {
   padding: 60px 0px;
   background-color: var(--background-color);
 }
 
-.footer-container {
+.footer__container {
   align-items: baseline;
   display: flex;
 }
 
-.footer-nav-box {
+.footer__nav {
   flex-grow: 1;
   margin-right: 70px;
 }
@@ -564,7 +563,7 @@ html {
   color: var(--accent-text-color);
 }
 
-.footer-link {
+.footer-list__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -572,12 +571,12 @@ html {
   color: var(--white-logo-color);
 }
 
-.footer-connection {
+.footer-list__connection {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timing-function);
 }
 
-.footer-connection:hover, .footer-connection:focus {
+.footer-list__connection:hover, .footer-list__connection:focus {
   color: var(--accent-text-color);
 }
 
@@ -587,7 +586,7 @@ html {
   flex-direction: column;
 }
 
-.footer-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -599,7 +598,7 @@ html {
   background-color: var(--background-color);
 }
 
-.footer-input::placeholder {
+.footer-form__input::placeholder {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 16px;
@@ -608,34 +607,12 @@ html {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button-footer {
-  align-items: center;
-  margin-left: 12px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 28px;
-  font-weight: 700;
-  min-width: 200px;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-  border-radius: 4px;
-  border: transparent;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  color: var(--white-color);
-  background-color: var(--accent-text-color);
-}
-
-.footer-box {
+.footer-form_box {
   display: flex;
 }
 
 /* new */
-.footer-socials-titel {
+.footer-list__titel {
   color: var(--white-color);
   font-weight: 700;
   font-size: 14px;
