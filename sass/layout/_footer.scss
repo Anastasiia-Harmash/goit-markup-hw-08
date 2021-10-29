@@ -1,3 +1,5 @@
+/* Footer */
+
 .footer-nav {
   padding: 60px 0px;
   background-color: var(--background-color);
@@ -13,8 +15,20 @@
   margin-right: 70px;
 }
 
+.logo-footer {
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--white-logo-color);
+}
+
 .footer-list {
   margin-top: 20px;
+
   & > li:not(:last-child) {
     margin-bottom: 9px;
   }
@@ -61,6 +75,8 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
+  background-color: var(--background-color);
+
   &::placeholder {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -72,6 +88,34 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
+}
+
+.button-footer {
+  align-items: center;
+  margin-left: 12px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+
+  font-weight: 700;
+  min-width: 200px;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  border: transparent;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
 }
 
 .footer-box {

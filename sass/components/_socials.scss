@@ -29,7 +29,6 @@
   }
 }
 
-
 .socials-icon {
   width: 20px;
   height: 20px;
@@ -37,6 +36,7 @@
   transition: fill 250ms var(--timing-function);
 
   .socials-link:hover &,
-.socials-link:focus &{
-  fill: var(--white-color);
+  .socials-link:focus & {
+    fill: var(--white-color);
+  }
 }

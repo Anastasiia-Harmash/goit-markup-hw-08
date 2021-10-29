@@ -1,19 +1,19 @@
-.works-section {
+.works {
   padding-top: 0px;
 }
 
-.works-list {
+.works__list {
   display: flex;
-  & .works-img:not(:last-child) {
+  & .works__img:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.works-thumb {
+.works__thumb {
   position: relative;
 }
 
-.works-text {
+.works__text {
   position: absolute;
   bottom: 0%;
   left: 0%;

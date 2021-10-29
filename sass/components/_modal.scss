@@ -153,13 +153,14 @@
   justify-content: center;
 }
 
-.modal-user-text{
-    &:checked + .modal-checkbox span {
-  border-color: var(--accent-text-color);
-  background-color: var(--accent-text-color);
-  background-size: contain;
-  background-origin: border-box;
-  border-radius: 2px;
+.modal-user-text {
+  &:checked + .modal-checkbox span {
+    border-color: var(--accent-text-color);
+    background-color: var(--accent-text-color);
+    background-size: contain;
+    background-origin: border-box;
+    border-radius: 2px;
+  }
 }
 
 .submit {
