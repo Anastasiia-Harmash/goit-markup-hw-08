@@ -1,20 +1,8 @@
-.clients-titel {
-  margin-bottom: 50px;
-
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--titel-text-color);
-}
-
 .clients-list {
   display: flex;
 }
 
-.clients-item {
+.clients-list__item {
   width: 170px;
   height: 92px;
 
@@ -23,7 +11,7 @@
   }
 }
 
-.clients-link {
+.clients-list__link {
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -42,12 +30,12 @@
   }
 }
 
-.clients-icon {
+.clients-list__icon {
   fill: var(--fill);
   transition: fill 250ms var(--timing-function);
 
-  .clients-link:hover &,
-  .clients-link:focus & {
+  .clients-list__link:hover &,
+  .clients-list__link:focus & {
     fill: var(--accent-text-color);
   }
 }
