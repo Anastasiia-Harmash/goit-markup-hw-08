@@ -17,7 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body class="body">
@@ -78,8 +78,8 @@
                 <h2 class="visibility-hidden">Особенности</h2>
                 <!-- ../images/symbol-defs.svg#icon-antenna -->
                 <ul class="features">
-                    <li class="features-item">
-                        <div class="icon">
+                    <li class="features__item">
+                        <div class="features-icon">
                             <svg class="icon-antenna" width="70" height="70">
                                 <use href="./images/icons.svg#icon-antenna"> </use>
                             </svg>
@@ -89,8 +89,8 @@
                             формированию позиции.</p>
                     </li>
 
-                    <li class="features-item">
-                        <div class="icon">
+                    <li class="features__item">
+                        <div class="features-icon">
                             <svg class="icon-antenna" width="70" height="70">
                                 <use href="./images/icons.svg#icon-clock"> </use>
                             </svg>
@@ -100,8 +100,8 @@
                             влечет за собой.</p>
                     </li>
 
-                    <li class="features-item">
-                        <div class="icon">
+                    <li class="features__item">
+                        <div class="features-icon">
                             <svg class="icon-antenna" width="70" height="70">
                                 <use href="./images/icons.svg#icon-diagram"> </use>
                             </svg>
@@ -111,8 +111,8 @@
                             обуславливает.</p>
                     </li>
 
-                    <li class="features-item">
-                        <div class="icon">
+                    <li class="features__item">
+                        <div class="features-icon">
                             <svg class="icon-antenna" width="70" height="70">
                                 <use href="./images/icons.svg#icon-astronaut"> </use>
                             </svg>
@@ -128,9 +128,9 @@
 
         <!-- Примеры работ -->
 
-        <section class="section works-section">
+        <section class="section works__section">
             <div class="container">
-                <h2 class="works-titel">Чем мы занимаемся</h2>
+                <h2 class="section-titel">Чем мы занимаемся</h2>
                 <ul class="works-list">
                     <li class="works-img">
                         <div class="works-thumb">
@@ -169,7 +169,7 @@
 
         <section class="section command-section">
             <div class="container">
-                <h2 class="command-titel works-titel">Наша команда</h2>
+                <h2 class="command-titel section-titel">Наша команда</h2>
                 <ul class="command-list">
 
                     <li class="command-avatar">
@@ -348,7 +348,7 @@
 
         <section class="section">
             <div class="container">
-                <h2 class="clients-titel">Постоянные клиенты</h2>
+                <h2 class="section-titel">Постоянные клиенты</h2>
                 <ul class="clients-list">
                     <li class="clients-item">
 
@@ -425,10 +425,10 @@
                             <a class="footer-link" href="">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
                         <li>
-                            <a class="footer-link connection" href="maito:info@example.com">info@example.com</a>
+                            <a class="footer-link footer-connection" href="maito:info@example.com">info@example.com</a>
                         </li>
                         <li>
-                            <a class="footer-link connection" href="tel:+380991111111">+38 099 111 11 11</a>
+                            <a class="footer-link footer-connection" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
                 </address>
@@ -480,7 +480,7 @@
                     <label for="mail" class="footer-socials-titel"></label>
                     <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer-input" />
             </form>
-            <button class="button-footer" type="button subscribe-button">Подписаться<svg width="24" height="24">
+            <button class="button-footer" type="submit">Подписаться<svg width="24" height="24">
                     <use href="./images/icons.svg#icon-telegram"></use>
                 </svg></button>
         </div>
@@ -539,10 +539,10 @@
                 </div>
 
 
-                <div class="modal-form">
-                    <label for="mail" class="modal-label">Комментарий</label>
+                <div class="modal-comment">
+                    <label for="text" class="modal-label">Комментарий</label>
 
-                    <textarea name="mail" id="mail" cols="10" rows="10" placeholder="Введите текст"
+                    <textarea name="text" id="text" cols="10" rows="10" placeholder="Введите текст"
                         class="modal-input  textarea"></textarea>
                 </div>
 
@@ -564,3 +564,6 @@
 </body>
 
 </html>
+
+
+ 
