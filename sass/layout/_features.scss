@@ -6,17 +6,17 @@
   line-height: 1.71;
 
   letter-spacing: 0.03em;
-  & .features__item:not(:last-child) {
+  & .features-item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.features__item {
+.features-item {
   width: 270px;
   margin-right: 30px;
 }
 
-.features-icon {
+.features-item__icon {
   display: flex;
   background-color: var(--background);
   border-radius: 4px;
@@ -29,7 +29,7 @@
   background-size: cover;
 }
 
-.features-titel {
+.features-item__titel {
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -41,7 +41,7 @@
   color: var(--titel-text-color);
 }
 
-.features-text {
+.features-item__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
