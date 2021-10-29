@@ -15,17 +15,6 @@
   margin-right: 70px;
 }
 
-.logo-footer {
-  font-style: normal;
-  font-family: Raleway;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-
-  color: var(--white-logo-color);
-}
-
 .footer-list {
   margin-top: 20px;
 
@@ -34,7 +23,7 @@
   }
 }
 
-.logo-accent-footer {
+.logo__accent-footer {
   font-style: normal;
   color: var(--accent-text-color);
 }
