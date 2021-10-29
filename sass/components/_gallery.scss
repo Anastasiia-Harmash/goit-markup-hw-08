@@ -25,9 +25,9 @@
   }
 }
 
-.gallery__item:hover .gallery-wrapper__text {
-  transform: translateY(0);
-}
+// .gallery__item:hover .gallery-wrapper__text {
+//   transform: translateY(0);
+// }
 
 .gallery__link {
   display: block;
@@ -67,6 +67,10 @@
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms var(--timing-function);
+
+  .gallery__item:hover & {
+    transform: translateY(0);
+  }
 }
 
 .gallery-content__titel {

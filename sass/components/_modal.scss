@@ -111,23 +111,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  & span {
+    margin-right: 7px;
+
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .modal__link {
   color: var(--accent-text-color);
-}
-
-.modal__checkbox span {
-  margin-right: 7px;
-
-  width: 16px;
-  height: 15px;
-
-  border: 2px solid rgba(33, 33, 33, 1);
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .modal__user-text {
