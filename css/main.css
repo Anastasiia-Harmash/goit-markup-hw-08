@@ -402,23 +402,19 @@ html {
   color: var(--primary-text-color);
 }
 
-.command-section {
+.command {
   background-color: var(--background-command);
 }
 
-.command-titel {
-  margin-bottom: 50px;
-}
-
-.command-list {
+.command__list {
   display: flex;
 }
 
-.command-list .command-avatar:not(:last-child) {
+.command__list .command__list-avatar:not(:last-child) {
   margin-right: 30px;
 }
 
-.command-box {
+.command__list-box {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--white-color);
@@ -426,7 +422,7 @@ html {
   border-radius: 0px 0px 4px 4px;
 }
 
-.command-text {
+.command__list-text {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -436,7 +432,7 @@ html {
   color: var(--titel-text-color);
 }
 
-.command-desc {
+.command__list-desc {
   margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
@@ -450,16 +446,16 @@ html {
   justify-content: center;
 }
 
-.socials-item {
+.socials-list__item {
   width: 44px;
   height: 44px;
 }
 
-.socials-item + .socials-item {
+.socials-list__item + .socials-list__item {
   margin-left: 10px;
 }
 
-.socials-link {
+.socials-list__link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -470,19 +466,19 @@ html {
   transition: background-color 250ms var(--timing-function);
 }
 
-.socials-link:hover, .socials-link:focus {
+.socials-list__link:hover, .socials-list__link:focus {
   background-color: var(--accent-text-color);
 }
 
-.socials-icon {
+.socials-list__icon {
   width: 20px;
   height: 20px;
   fill: var(--fill);
   transition: fill 250ms var(--timing-function);
 }
 
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
+.socials-list__link:hover .socials-list__icon,
+.socials-list__link:focus .socials-list__icon {
   fill: var(--white-color);
 }
 
@@ -543,6 +539,10 @@ html {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
+}
+
+.section__titel-margin {
+  margin-bottom: 50px;
 }
 
 /* Footer */

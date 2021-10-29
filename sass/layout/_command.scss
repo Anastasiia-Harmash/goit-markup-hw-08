@@ -1,20 +1,16 @@
-.command-section {
+.command {
   background-color: var(--background-command);
 }
 
-.command-titel {
-  margin-bottom: 50px;
-}
-
-.command-list {
+.command__list {
   display: flex;
 
-  & .command-avatar:not(:last-child) {
+  & .command__list-avatar:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.command-box {
+.command__list-box {
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -26,7 +22,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.command-text {
+.command__list-text {
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -38,7 +34,7 @@
   color: var(--titel-text-color);
 }
 
-.command-desc {
+.command__list-desc {
   margin-bottom: 16px;
 
   text-align: center;
