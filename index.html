@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body class="body">
+<body>
     <!-- Шапка сайта -->
 
     <header class="header">
@@ -31,13 +31,13 @@
 
                 <ul class="site-nav">
                     <li class="site-nav__item">
-                        <a class="site-nav__link current" href="./index.html">Студия</a>
+                        <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link cursor" href="./portfolio.html">Портфолио</a>
+                        <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link cursor" href="./test.html">Контакты</a>
+                        <a class="site-nav__link" href="./test.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -45,14 +45,14 @@
             <ul class="auth-nav">
 
                 <li class="auth-nav__item">
-                    <a class="auth-nav__link cursor" href="mailto:info@devstudio.com"><svg class="auth-nav__icon" width="16"
+                    <a class="auth-nav__link" href="mailto:info@devstudio.com"><svg class="auth-nav__icon" width="16"
                             height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
 
                 <li class="auth-nav__item">
-                    <a class="auth-nav__link cursor" href="tel:+380961111111"><svg class="auth-nav__icon" width="10"
+                    <a class="auth-nav__link" href="tel:+380961111111"><svg class="auth-nav__icon" width="10"
                             height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
@@ -67,7 +67,7 @@
 
         <section class="hero">
             <div class="container">
-                <h1 class="hero-titel">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero__titel">Эффективные решения для вашего бизнеса</h1>
                 <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </section>
 
@@ -78,47 +78,47 @@
                 <h2 class="visibility-hidden">Особенности</h2>
 
                 <ul class="features">
-                    <li class="features-item">
-                        <div class="features-item__icon">
+                    <li class="features__item">
+                        <div class="features__box">
                             <svg class="" width="70" height="70">
                                 <use href="./images/icons.svg#icon-antenna"> </use>
                             </svg>
                         </div>
-                        <h3 class="features-item__titel">Внимание к деталям</h3>
-                        <p class="features-item__text">Идейные соображения, а также начало повседневной работы по
+                        <h3 class="features__titel">Внимание к деталям</h3>
+                        <p class="features__text">Идейные соображения, а также начало повседневной работы по
                             формированию позиции.</p>
                     </li>
 
-                    <li class="features-item">
-                        <div class="features-item__icon">
+                    <li class="features__item">
+                        <div class="features__box">
                             <svg class="" width="70" height="70">
                                 <use href="./images/icons.svg#icon-clock"> </use>
                             </svg>
                         </div>
-                        <h3 class="features-item__titel">Пунктуальность</h3>
-                        <p class="features-item__text">Задача организации, в особенности же рамки и место обучения кадров
+                        <h3 class="features__titel">Пунктуальность</h3>
+                        <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров
                             влечет за собой.</p>
                     </li>
 
-                    <li class="features-item">
-                        <div class="features-item__icon">
+                    <li class="features__item">
+                        <div class="features__box">
                             <svg class="icon-antenna" width="70" height="70">
                                 <use href="./images/icons.svg#icon-diagram"> </use>
                             </svg>
                         </div>
-                        <h3 class="features-item__titel">Планирование</h3>
-                        <p class="features-item__text">Равным образом консультация с широким активом в значительной степени
+                        <h3 class="features__titel">Планирование</h3>
+                        <p class="features__text">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
 
-                    <li class="features-item">
-                        <div class="features-item__icon">
+                    <li class="features__item">
+                        <div class="features__box">
                             <svg class="" width="70" height="70">
                                 <use href="./images/icons.svg#icon-astronaut"> </use>
                             </svg>
                         </div>
-                        <h3 class="features-item__titel">Современные технологии</h3>
-                        <p class="features-item__text">Значимость этих проблем настолько очевидна, что реализация плановых
+                        <h3 class="features__titel">Современные технологии</h3>
+                        <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий.</p>
                     </li>
                 </ul>
@@ -128,11 +128,11 @@
 
         <!-- Примеры работ -->
 
-        <section class="section works">
+        <section class="section section__works">
             <div class="container">
-                <h2 class="section__titel">Чем мы занимаемся</h2>
-                <ul class="works__list">
-                    <li class="works__img">
+                <h2 class="section__title">Чем мы занимаемся</h2>
+                <ul class="works">
+                    <li class="works__item">
                         <div class="works__thumb">
                             <img src="./images/box1.jpg" alt="работа за планшетом" width="370" height="294" />
 
@@ -141,7 +141,7 @@
                     </li>
 
 
-                    <li class="works__img">
+                    <li class="works__item">
                         <div class="works__thumb">
                             <img src="./images/box2.jpg" alt="работа за ноутбуком" width="370" height="294" />
 
@@ -151,7 +151,7 @@
                     </li>
 
 
-                    <li class="works__img">
+                    <li class="works__item">
                         <div class="works__thumb">
                             <img src="./images/box3.jpg" alt="планшет в руках" width="370" height="294" />
 
@@ -167,16 +167,16 @@
 
         <!-- Команда -->
 
-        <section class="section command">
+        <section class="section section__command">
             <div class="container">
-                <h2 class="section__titel section__titel-margin">Наша команда</h2>
-                <ul class="command-list">
+                <h2 class="section__title section__title-margin">Наша команда</h2>
+                <ul class="command">
 
-                    <li class="command-list__avatar">
+                    <li class="command__item">
                         <img src="./images/img1.jpg" alt="фотография Игорья Демьяненко" width="270" height="260" />
-                        <div class="command_list__box">
-                            <h3 class="command-list__text">Игорь Демьяненко</h3>
-                            <p lang="en" class="command-list__desc">Product Designer</p>
+                        <div class="command__box">
+                            <h3 class="command__title">Игорь Демьяненко</h3>
+                            <p lang="en" class="command__desc">Product Designer</p>
 
                             <ul class="socials-list">
 
@@ -215,11 +215,11 @@
                         </div>
                     </li>
 
-                    <li class="command-list__avatar">
+                    <li class="command__item">
                         <img src="./images/img2.jpg" alt="фотография Ольги Репиной" width="270" height="260" />
-                        <div class="command_list__box">
-                            <h3 class="command-list__text">Ольга Репина</h3>
-                            <p lang="en" class="command-list__desc">Frontend Developer</p>
+                        <div class="command__box">
+                            <h3 class="command__title">Ольга Репина</h3>
+                            <p lang="en" class="command__desc">Frontend Developer</p>
                             <ul class="socials-list">
 
                                 <li class="socials-list__item">
@@ -257,11 +257,11 @@
                         </div>
                     </li>
 
-                    <li class="command-list__avatar">
+                    <li class="command__item">
                         <img src="./images/img3.jpg" alt="фотография Николая Тарасова" width="270" height="260" />
-                        <div class="command_list__box">
-                            <h3 class="command-list__text"> Николай Тарасов</h3>
-                            <p lang="en" class="command-list__desc">Marketing</p>
+                        <div class="command__box">
+                            <h3 class="command__title"> Николай Тарасов</h3>
+                            <p lang="en" class="command__desc">Marketing</p>
                             <ul class="socials-list">
 
                                 <li class="socials-list__item">
@@ -299,11 +299,11 @@
                         </div>
                     </li>
 
-                    <li class="command-list__avatar">
+                    <li class="command__item">
                         <img src="./images/img4.jpg" alt="фотография Михаил Ермаков" width="270" height="260" />
-                        <div class="command_list__box">
-                            <h3 class="command-list__text">Михаил Ермаков</h3>
-                            <p lang="en" class="command-list__desc">UI Designer</p>
+                        <div class="command__box">
+                            <h3 class="command__title">Михаил Ермаков</h3>
+                            <p lang="en" class="command__desc">UI Designer</p>
                             <ul class="socials-list">
 
                                 <li class="socials-list__item">
@@ -348,57 +348,57 @@
 
         <section class="section">
             <div class="container">
-                <h2 class="section__titel">Постоянные клиенты</h2>
-                <ul class="clients-list">
-                    <li class="clients-list__item">
+                <h2 class="section__title">Постоянные клиенты</h2>
+                <ul class="clients">
+                    <li class="clients__item">
 
-                        <a href="" class="clients-list__link">
-                            <svg class="clients-list__icon" width="106" height="60">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-yaa"> </use>
                             </svg>
                         </a>
                     </li>
 
-                    <li class="clients-list__item">
+                    <li class="clients__item">
 
-                        <a href="" class="clients-list__link">
-                            <svg class="clients-list__icon" width="106" height="60">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-tag"> </use>
                             </svg>
                         </a>
                     </li>
 
-                    <li class="clients-list__item">
+                    <li class="clients__item">
 
-                        <a href="" class="clients-list__link">
-                            <svg class="clients-list__icon" width="106" height="60">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-group"> </use>
                             </svg>
                         </a>
                     </li>
 
-                    <li class="clients-list__item">
+                    <li class="clients__item">
 
-                        <a href="" class="clients-list__link">
-                            <svg class="clients-list__icon" width="106" height="60">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-foster"> </use>
                             </svg>
                         </a>
                     </li>
 
-                    <li class="clients-list__item">
+                    <li class="clients__item">
 
-                        <a href="" class="clients-list__link">
-                            <svg class="clients-list__icon" width="106" height="60">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-brand"> </use>
                             </svg>
                         </a>
                     </li>
 
-                    <li class="clients-list__item">
+                    <li class="clients__item">
 
-                        <a href="" class="clients-list__link">
-                            <svg class="clients-list__icon" width="106" height="60">
+                        <a href="" class="clients__link">
+                            <svg class="clients__icon" width="106" height="60">
                                 <use href="./images/icons.svg#icon-tarline"> </use>
                             </svg>
                         </a>

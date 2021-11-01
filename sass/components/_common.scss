@@ -8,20 +8,10 @@ html {
   box-sizing: inherit;
 }
 
-.body {
+body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 
   background-color: var(--background-color-two);
   color: var(--titel-text-color);
-}
-
-.cursor {
-  transition: color 250ms var(--timing-function);
-  &:hover,
-  &:focus,
-  &:active {
-    color: var(--accent-text-color);
-    cursor: pointer;
-  }
 }

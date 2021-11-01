@@ -23,7 +23,7 @@
 
 
 
-<body class="body">
+<body>
 
     <!-- Шапка сайта -->
 
@@ -35,13 +35,13 @@
     
                 <ul class="site-nav">
                     <li class="site-nav__item">
-                        <a class="site-nav__link cursor" href="./index.html">Студия</a>
+                        <a class="site-nav__link" href="./index.html">Студия</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link current" href="./portfolio.html">Портфолио</a>
+                        <a class="site-nav__link site-nav__link--current" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="site-nav__item">
-                        <a class="site-nav__link cursor" href="./test.html">Контакты</a>
+                        <a class="site-nav__link" href="./test.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -49,14 +49,14 @@
             <ul class="auth-nav">
     
                 <li class="auth-nav__item">
-                    <a class="auth-nav__link cursor" href="mailto:info@devstudio.com"><svg class="auth-nav__icon" width="16"
+                    <a class="auth-nav__link" href="mailto:info@devstudio.com"><svg class="auth-nav__icon" width="16"
                             height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
     
                 <li class="auth-nav__item">
-                    <a class="auth-nav__link cursor" href="tel:+380961111111"><svg class="auth-nav__icon" width="10"
+                    <a class="auth-nav__link" href="tel:+380961111111"><svg class="auth-nav__icon" width="10"
                             height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
@@ -74,23 +74,23 @@
 
                 <ul class="portfolio-list">
                     <li class="portfolio-list__items">
-                        <button class="button__portfolio" type="button">Все</button>
+                        <button class="portfolio-list__button" type="button">Все</button>
                     </li>
 
                     <li class="portfolio-list__items">
-                        <button class="button__portfolio" type="button">Веб-сайты</button>
+                        <button class="portfolio-list__button" type="button">Веб-сайты</button>
                     </li>
 
                     <li class="portfolio-list__items">
-                        <button class="button__portfolio" type="button">Приложения</button>
+                        <button class="portfolio-list__button" type="button">Приложения</button>
                     </li>
 
                     <li class="portfolio-list__items">
-                        <button class="button__portfolio" type="button">Дизайн</button>
+                        <button class="portfolio-list__button" type="button">Дизайн</button>
                     </li>
 
                     <li class="portfolio-list__items">
-                        <button class="button__portfolio" type="button">Маркетинг</button>
+                        <button class="portfolio-list__button" type="button">Маркетинг</button>
                     </li>
                 </ul>
 
@@ -103,15 +103,15 @@
                             <div class="gallery-wrapper">
                                 <img src="./images/notebook.jpg" alt="" width="370" height="294" />
 
-                                <p class="gallery-wrapper__text">Технокряк это современная площадка распространения
+                                <p class="gallery__desc">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
 
-                            <div class="gallery-content">
-                                <h2 class="gallery-content__titel">Технокряк</h2>
-                                <p class="gallery-content__text">Веб-сайт</p>
+                            <div class="gallery__box">
+                                <h2 class="gallery__title">Технокряк</h2>
+                                <p class="gallery__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
@@ -121,16 +121,16 @@
                         <a href="" class="gallery__link">
                             <div class="gallery-wrapper">
                                 <img src="./images/basketball.jpg" alt="" width="370" height="294" />
-                                <p class="gallery-wrapper__text">Технокряк это современная площадка распространения
+                                <p class="gallery__desc">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту
                                     платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
 
-                            <div class="gallery-content">
-                                <h2 class="gallery-content__titel">Постер New Orlean vs Golden Star</h2>
-                                <p class="gallery-content__text">Дизайн</p>
+                            <div class="gallery__box">
+                                <h2 class="gallery__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="gallery__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
@@ -141,15 +141,15 @@
                         <a href="" class="gallery__link">
                             <div class="gallery-wrapper">
                                 <img src="./images/seabood.jpg" alt="" width="370" height="294" />
-                                <p class="gallery-wrapper__text">Технокряк это современная площадка распространения
+                                <p class="gallery__desc">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту
                                     платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
-                            <div class="gallery-content">
-                                <h2 class="gallery-content__titel">Ресторан Seafood</h2>
-                                <p class="gallery-content__text">Приложение</p>
+                            <div class="gallery__box">
+                                <h2 class="gallery__title">Ресторан Seafood</h2>
+                                <p class="gallery__text">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -160,15 +160,15 @@
                         <a href="" class="gallery__link">
                             <div class="gallery-wrapper">
                                 <img src="./images/headphones.jpg" alt="" width="370" height="294" />
-                                <p class="gallery-wrapper__text">Технокряк это современная площадка распространения
+                                <p class="gallery__desc">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту
                                     платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
-                            <div class="gallery-content">
-                                <h2 class="gallery-content__titel">Проект Prime</h2>
-                                <p class="gallery-content__text">Маркетинг</p>
+                            <div class="gallery__box">
+                                <h2 class="gallery__title">Проект Prime</h2>
+                                <p class="gallery__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
@@ -179,15 +179,15 @@
                         <a href="" class="gallery__link">
                             <div class="gallery-wrapper">
                                 <img src="./images/box.jpg" alt="" width="370" height="294" />
-                                <p class="gallery-wrapper__text">Технокряк это современная площадка распространения
+                                <p class="gallery__desc">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту
                                     платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
-                            <div class="gallery-content">
-                                <h2 class="gallery-content__titel">Проект Boxes</h2>
-                                <p class="gallery-content__text">Приложение</p>
+                            <div class="gallery__box">
+                                <h2 class="gallery__title">Проект Boxes</h2>
+                                <p class="gallery__text">Приложение</p>
                             </div>
                         </a>
                     </li>
@@ -198,15 +198,15 @@
                         <a href="" class="gallery__link">
                             <div class="gallery-wrapper">
                                 <img src="./images/monitor.jpg" alt="" width="370" height="294" />
-                                <p class="gallery-wrapper__text">Технокряк это современная площадка распространения
+                                <p class="gallery__desc">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту
                                     платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
-                            <div class="gallery-content">
-                                <h2 lang="en" class="gallery-content__titel">Inspiration has no Borders</h2>
-                                <p class="gallery-content__text">Веб-сайт</p>
+                            <div class="gallery__box">
+                                <h2 lang="en" class="gallery__title">Inspiration has no Borders</h2>
+                                <p class="gallery__text">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
@@ -217,15 +217,15 @@
                         <a href="" class="gallery__link">
                             <div class="gallery-wrapper">
                                 <img src="./images/magazine.jpg" alt="" width="370" height="294" />
-                                <p class="gallery-wrapper__text">Технокряк это современная площадка распространения
+                                <p class="gallery__desc">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту
                                     платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
-                            <div class="gallery-content">
-                                <h2 class="gallery-content__titel">Издание Limited Edition</h2>
-                                <p class="gallery-content__text">Дизайн</p>
+                            <div class="gallery__box">
+                                <h2 class="gallery__title">Издание Limited Edition</h2>
+                                <p class="gallery__text">Дизайн</p>
                             </div>
                         </a>
                     </li>
@@ -236,15 +236,15 @@
                         <a href="" class="gallery__link">
                             <div class="gallery-wrapper">
                                 <img src="./images/labeltag.jpg" alt="" width="370" height="294" />
-                                <p class="gallery-wrapper__text">Технокряк это современная площадка распространения
+                                <p class="gallery__desc">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту
                                     платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
-                            <div class="gallery-content">
-                                <h2 class="gallery-content__titel">Проект LAB</h2>
-                                <p class="gallery-content__text">Маркетинг</p>
+                            <div class="gallery__box">
+                                <h2 class="gallery__title">Проект LAB</h2>
+                                <p class="gallery__text">Маркетинг</p>
                             </div>
                         </a>
                     </li>
@@ -255,15 +255,15 @@
                         <a href="" class="gallery__link">
                             <div class="gallery-wrapper">
                                 <img src="./images/notebook-work.jpg" alt="" width="370" height="294" />
-                                <p class="gallery-wrapper__text">Технокряк это современная площадка распространения
+                                <p class="gallery__desc">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту
                                     платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </p>
                             </div>
-                            <div class="gallery-content">
-                                <h2 lang="en" class="gallery-content__titel">Growing Business</h2>
-                                <p class="gallery-content__text">Приложение</p>
+                            <div class="gallery__box">
+                                <h2 lang="en" class="gallery__title">Growing Business</h2>
+                                <p class="gallery__text">Приложение</p>
                             </div>
                         </a>
                     </li>

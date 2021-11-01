@@ -68,6 +68,7 @@
   transition: color 250ms var(--timing-function);
 
   &:hover,
+  &:focus,
   &:active {
     color: var(--accent-text-color);
     fill: var(--accent-text-color);
@@ -91,4 +92,10 @@
   color: var(--titel-text-color);
 
   transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-text-color);
+    cursor: pointer;
+  }
 }
