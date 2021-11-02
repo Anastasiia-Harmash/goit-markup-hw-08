@@ -3,11 +3,6 @@
 }
 
 .command {
-  //   width: 100%;
-
-  //   & .command__item:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-evenly;

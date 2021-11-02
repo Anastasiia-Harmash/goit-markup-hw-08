@@ -1,42 +1,42 @@
-// .logo {
-//   display: block;
-//   margin: 0;
+.logo {
+  display: block;
+  margin: 0;
 
-//   font-family: Raleway;
-//   font-weight: 900;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 
-//   list-style: none;
-//   text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 
-//   color: var(--logo-color);
-// }
+  color: var(--logo-color);
+}
 
-// .logo__accent {
-//   font-family: Raleway;
-//   font-weight: 900;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   list-style: none;
+.logo__accent {
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  list-style: none;
 
-//   color: var(--accent-text-color);
-// }
+  color: var(--accent-text-color);
+}
 
-// .logo__footer {
-//   font-style: normal;
-//   font-family: Raleway;
-//   font-weight: 500;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
+.logo__footer {
+  font-style: normal;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 
-//   color: var(--white-logo-color);
-// }
+  color: var(--white-logo-color);
+}
 
-// .logo__footer-accent {
-//   font-style: normal;
-//   color: var(--accent-text-color);
-// }
+.logo__footer-accent {
+  font-style: normal;
+  color: var(--accent-text-color);
+}

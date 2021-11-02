@@ -1,108 +1,106 @@
-// .button {
-//   display: inline-block;
-//   margin: 0px;
-//   border-radius: 4px;
-//   border: 0px solid transparent;
-//   padding: 11px 34px;
-//   min-width: 70px;
-//   text-align: center;
+.button {
+  display: inline-block;
+  margin: 0px;
+  border-radius: 4px;
+  border: 0px solid transparent;
+  padding: 11px 34px;
+  min-width: 70px;
+  text-align: center;
 
-//   font-weight: 500;
-//   font-size: 15px;
-//   line-height: 1.2;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
 
-//   cursor: pointer;
+  cursor: pointer;
 
-//   color: var(--white-color);
-//   background-color: var(--accent-text-color);
-// }
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+}
 
-// // FOOTER
+// FOOTER
 
-// .button__footer {
-//   align-items: center;
-//   margin-left: 12px;
+.button__footer {
+  align-items: center;
+  margin-left: 12px;
 
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   padding-left: 29px;
-//   padding-right: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
 
-//   font-weight: 700;
-//   min-width: 200px;
-//   font-size: 16px;
-//   line-height: 1.9;
-//   letter-spacing: 0.06em;
+  font-weight: 700;
+  min-width: 200px;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 
-//   border-radius: 4px;
-//   border: transparent;
+  border-radius: 4px;
+  border: transparent;
 
-//   cursor: pointer;
+  cursor: pointer;
 
-//   display: flex;
-//   justify-content: space-between;
-//   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 
-//   color: var(--white-color);
-//   background-color: var(--accent-text-color);
-// }
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+}
 
-// /* portfolio - button  */
+/* portfolio - button  */
 
-// .portfolio-list__button {
-//   font-family: inherit;
-//   justify-content: center;
+.portfolio-list__button {
+  font-family: inherit;
+  justify-content: center;
 
-//   padding: 6px 22px;
+  padding: 6px 22px;
 
-//   cursor: pointer;
-//   font-weight: 500;
-//   min-width: 73px;
-//   font-size: 16px;
-//   line-height: 1.6;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 73px;
+  font-size: 16px;
+  line-height: 1.6;
 
-//   border-radius: 4px;
-//   border: transparent;
+  border-radius: 4px;
+  border: transparent;
 
-//   color: var(--title-text-color);
-//   background-color: var(--background);
+  color: var(--title-text-color);
+  background-color: var(--background);
 
-//   transition: color 250ms var(--timing-function),
-//     background-color 250ms var(--timing-function),
-//     box-shadow 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 
-//   &:hover,
-//   &:focus,
-//   &:active {
-//     color: var(--white-color);
-//     background-color: var(--accent-text-color);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--white-color);
+    background-color: var(--accent-text-color);
 
-//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//       0px 2px 2px rgba(0, 0, 0, 0.12);
-//   }
-// }
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
 
-//  MODAL
+MODAL .button__modal {
+  position: absolute;
 
-// .button__modal {
-//   position: absolute;
+  right: 8px;
+  top: 8px;
 
-//   right: 8px;
-//   top: 8px;
+  width: 30px;
+  height: 30px;
 
-//   width: 30px;
-//   height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 
-//   background-color: transparent;
-//   border-radius: 50%;
-//   border: 1px solid rgba(0, 0, 0, 0.1);
-//   cursor: pointer;
+  transition: border 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 
-//   transition: border 250ms var(--timing-function),
-//     fill 250ms var(--timing-function);
-
-//   &:hover {
-//     border: 1px solid var(--accent-text-color);
-//     fill: var(--accent-text-color);
-//   }
-// }
+  &:hover {
+    border: 1px solid var(--accent-text-color);
+    fill: var(--accent-text-color);
+  }
+}

@@ -1,16 +1,16 @@
-// /* PAGE PORTFOLIO */
-// .portfolio-list {
-//   display: flex;
+/* PAGE PORTFOLIO */
+.portfolio-list {
+  display: flex;
 
-//   justify-content: center;
-//   margin-bottom: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
 
-//   cursor: pointer;
-// }
+  cursor: pointer;
+}
 
-// .portfolio-list__items {
-//   margin-right: 8px;
-//   .portfolio-list &:not(:last-child) {
-//     margin-right: 8px;
-//   }
-// }
+.portfolio-list__items {
+  margin-right: 8px;
+  .portfolio-list &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
