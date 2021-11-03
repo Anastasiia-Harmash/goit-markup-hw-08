@@ -21,7 +21,6 @@
 
 .button__footer {
   align-items: center;
-  margin-left: 12px;
 
   padding-top: 10px;
   padding-bottom: 10px;
@@ -45,6 +44,14 @@
 
   color: var(--white-color);
   background-color: var(--accent-text-color);
+
+  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    margin: 20px auto auto auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: auto auto auto 12px;
+  }
 }
 
 /* portfolio - button  */
