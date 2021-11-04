@@ -28,7 +28,7 @@
 
             <nav class="header__logo">
                 <a class="logo" href=""><span class="logo__accent">Web</span>Studio</a>
-<button class="menu-open-btn">
+<button class="mob-menu__open-btn"> 
     <svg class="" width="24" height="16">
     <use href="./images/icons.svg#icon-menu"> </use>
 </svg>
@@ -36,39 +36,39 @@
 
 <div class="backdrop is-hidden">
     <div class="mob-menu">
-            <div class="mob-menu-content">
-                <ul class="mod-menu-list">  
-                        <li class="mod-menu-item mod-menu-item-current"> 
-                            <a href="./index.html" class="mod-menu-link">Студия</a>
+            <div class="mob-menu__content">
+                <ul class="mod-menu__list">  
+                        <li class="mod-menu__item"> 
+                            <a href="./index.html" class="mod-menu__link mod-menu__link--current">Студия</a>
                         </li>
-                        <li class="mod-menu-item">
-                            <a href="./portfolio.html" class="mod-menu-link">Портфолио</a>
+                        <li class="mod-menu__item">
+                            <a href="./portfolio.html" class="mod-menu__link">Портфолио</a>
                         </li>
-                        <li class="mod-menu-item">
-                            <a href="" class="mod-menu-link">Контакты</a>
+                        <li class="mod-menu__item">
+                            <a href="" class="mod-menu__link">Контакты</a>
                         </li>
                 </ul>
-<div class="mob-menu-bottom">
+<div class="mob-menu__bottom">
                 <a href="tel:+380961111111" class="mob-menu-tel">+38 096 111 11 11</a>
                 <a href="mailto:info@devstudio.com" class="mob-menu-email">info@devstudio.com</a>
 
-    <ul class="mod-menu-list-bottom">
-        <li class="mod-menu-item-bottom">
-            <a href="" class="mod-menu-link-bottom">Instagram</a>
+    <ul class="mod-menu__list-bottom">
+        <li class="mod-menu__item-bottom">
+            <a href="" class="mod-menu__link-bottom">Instagram</a>
         </li>
-        <li class="mod-menu-item-bottom">
-            <a href="" class="mod-menu-link-bottom">Twitter</a>
+        <li class="mod-menu__item-bottom">
+            <a href="" class="mod-menu__link-bottom">Twitter</a>
         </li>
-        <li class="mod-menu-item-bottom">
-            <a href="" class="mod-menu-link-bottom">Facebook</a>
+        <li class="mod-menu__item-bottom">
+            <a href="" class="mod-menu__link-bottom">Facebook</a>
         </li>
-        <li class="mod-menu-item-bottom">
-            <a href="" class="mod-menu-link-bottom">LinkedIn</a>
+        <li class="mod-menu__item-bottom">
+            <a href="" class="mod-menu__link-bottom">LinkedIn</a>
         </li>
     </ul>
 </div>
                 </div>
-                <button class="menu-close-btn">
+                <button class="mod-menu-close-btn">
                     <svg class="" width="19" height="19">
                         <use href="./images/icons.svg#icon-menu-close"> </use>
                     </svg>
@@ -180,8 +180,12 @@
                 <h2 class="section__title section__title-margin">Чем мы занимаемся</h2>
                 <ul class="works">
                     <li class="works__item">
-                        <div class="works__thumb">
-                            <img src="./images/box1.jpg" alt="работа за планшетом" width="370" height="294" />
+                        <div class="works__thumb"> 
+                            <img 
+                            srcset="./images/box1.jpg 1x, ./images/box1des@2x.jpg 2x"
+                            src="./images/box1.jpg" 
+                            alt="работа за планшетом"
+                             width="370" height="294" />
 
                             <p class="works__text">Десктопные приложения</p>
                         </div>
@@ -190,7 +194,11 @@
 
                     <li class="works__item">
                         <div class="works__thumb">
-                            <img src="./images/box2.jpg" alt="работа за ноутбуком" width="370" height="294" />
+                            <img 
+                             srcset="./images/box2.jpg 1x, ./images/box2des@2x.jpg 2x"
+                            src="./images/box2.jpg"
+                             alt="работа за ноутбуком" 
+                             width="370" height="294" />
 
                             <p class="works__text">Мобильные приложения</p>
                         </div>
@@ -200,7 +208,11 @@
 
                     <li class="works__item">
                         <div class="works__thumb">
-                            <img src="./images/box3.jpg" alt="планшет в руках" width="370" height="294" />
+                            <img 
+                            srcset="./images/box3.jpg 1x, ./images/box3des@2x.jpg 2x"
+                            src="./images/box3.jpg"
+                             alt="планшет в руках" 
+                             width="370" height="294" />
 
                             <p class="works__text">Дизайнерские решения</p>
                         </div>
@@ -220,7 +232,15 @@
                 <ul class="command">
 
                     <li class="command__item">
-                        <img src="./images/img1.jpg" alt="фотография Игорья Демьяненко" width="270" height="260" />
+
+                        
+                        <picture>
+                            <source srcset=" ./images/igordes.jpg 1x, ./images/igordes@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/igortab.jpg 1x, ./images/igortab@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset=" ./images/igormob.jpg 1x, ./images/igormob@2x.jpg 2x" media="(max-width: 480px)" />
+                            <img src="./images/img1.jpg" alt="фотография Игорья Демьяненко" width="270" height="260" />
+                        </picture>
+
                         <div class="command__box">
                             <h3 class="command__title">Игорь Демьяненко</h3>
                             <p lang="en" class="command__desc">Product Designer</p>
@@ -263,7 +283,13 @@
                     </li>
 
                     <li class="command__item">
-                        <img src="./images/img2.jpg" alt="фотография Ольги Репиной" width="270" height="260" />
+                        
+                        <picture>
+                            <source srcset=" ./images/olgades.jpg 1x, ./images/olgades@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/olgatab.jpg 1x, ./images/olgatab@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset=" ./images/olgamob.jpg 1x, ./images/olgamob@2x.jpg 2x" media="(max-width: 480px)" />
+                            <img src="./images/img2.jpg" alt="фотография Игорья Демьяненко" width="270" height="260" />
+                        </picture>
                         <div class="command__box">
                             <h3 class="command__title">Ольга Репина</h3>
                             <p lang="en" class="command__desc">Frontend Developer</p>
@@ -305,7 +331,14 @@
                     </li>
 
                     <li class="command__item">
+
+                        <picture>
+                            <source srcset=" ./images/nikolaydes.jpg 1x, ./images/nikolaydes@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/nikolaytab.jpg 1x, ./images/nikolaytab@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset=" ./images/nikolaymob.jpg 1x, ./images/nikolaymob@2x.jpg 2x" media="(max-width: 480px)" />
                         <img src="./images/img3.jpg" alt="фотография Николая Тарасова" width="270" height="260" />
+                        </picture>
+
                         <div class="command__box">
                             <h3 class="command__title"> Николай Тарасов</h3>
                             <p lang="en" class="command__desc">Marketing</p>
@@ -347,7 +380,14 @@
                     </li>
 
                     <li class="command__item">
+
+<picture>
+    <source srcset=" ./images/michaeldes.jpg 1x, ./images/michaeldes@2x.jpg 2x" media="(min-width: 1200px)" />
+    <source srcset="./images/michaeltab.jpg 1x, ./images/michaeltab@2x.jpg 2x" media="(min-width: 768px)" />
+    <source srcset=" ./images/michaelmob.jpg 1x, ./images/michaelmob@2x.jpg 2x" media="(max-width: 480px)" />
                         <img src="./images/img4.jpg" alt="фотография Михаил Ермаков" width="270" height="260" />
+</picture>
+
                         <div class="command__box">
                             <h3 class="command__title">Михаил Ермаков</h3>
                             <p lang="en" class="command__desc">UI Designer</p>
