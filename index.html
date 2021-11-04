@@ -23,12 +23,59 @@
 <body>
     <!-- Шапка сайта -->
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="main-nav container">
 
-            <nav class="site-nav">
+            <nav class="header__logo">
                 <a class="logo" href=""><span class="logo__accent">Web</span>Studio</a>
+<button class="menu-open-btn">
+    <svg class="" width="24" height="16">
+    <use href="./images/icons.svg#icon-menu"> </use>
+</svg>
+</button>
 
+<div class="backdrop is-hidden">
+    <div class="mob-menu">
+            <div class="mob-menu-content">
+                <ul class="mod-menu-list">  
+                        <li class="mod-menu-item"> 
+                            <a href="./index.html" class="mod-menu-link">Студия</a>
+                        </li>
+                        <li class="mod-menu-item">
+                            <a href="./portfolio.html" class="mod-menu-link">Портфолио</a>
+                        </li>
+                        <li class="mod-menu-item">
+                            <a href="" class="mod-menu-link">Контакты</a>
+                        </li>
+                </ul>
+<div class="mob-menu-bottom">
+                <a href="tel:+380961111111" class="mob-menu-tel">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="mob-menu-email">info@devstudio.com</a>
+
+    <ul class="mod-menu-list-bottom">
+        <li class="mod-menu-item-bottom">
+            <a href="" class="mod-menu-link-bottom">Instagram</a>
+        </li>
+        <li class="mod-menu-item-bottom">
+            <a href="" class="mod-menu-link-bottom">Twitter</a>
+        </li>
+        <li class="mod-menu-item-bottom">
+            <a href="" class="mod-menu-link-bottom">Facebook</a>
+        </li>
+        <li class="mod-menu-item-bottom">
+            <a href="" class="mod-menu-link-bottom">LinkedIn</a>
+        </li>
+    </ul>
+</div>
+                </div>
+                <button class="menu-close-btn">
+                    <svg class="" width="19" height="19">
+                        <use href="./images/icons.svg#icon-menu-close"> </use>
+                    </svg>
+                </button>
+           
+    </div>
+</div>
                 <ul class="site-nav">
                     <li class="site-nav__item">
                         <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a>
@@ -60,7 +107,9 @@
             </ul>
 
         </div>
-    </header> -->
+
+
+           </header>
 
     <main>
         <!-- Герой -->
@@ -491,7 +540,7 @@
 
     <!-- Backdrop Modal -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
 
 
@@ -558,11 +607,12 @@
             </form>
 
         </div>
-    </div> -->
+    </div>
 
 
 
     <script src="./js/modal.js"> </script>
+    <script src="./js/menu.js"> </script>
 </body>
 
 </html>

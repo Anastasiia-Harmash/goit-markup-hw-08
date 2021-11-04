@@ -1,9 +1,16 @@
 .footer {
   padding: 60px 0px;
   background-color: var(--background-color);
+  justify-content: space-around;
+  width: 100%;
 
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
     margin: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     justify-content: center;
     text-align: center;
   }
@@ -28,6 +35,10 @@
 
 .footer__nav {
   flex-grow: 1;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    justify-content: center;
+    align-items: center;
+  }
   @media screen and (min-width: $desktop) {
     margin-right: 70px;
   }
@@ -64,6 +75,10 @@
 }
 
 .footer-form {
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    align-items: center;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: column;

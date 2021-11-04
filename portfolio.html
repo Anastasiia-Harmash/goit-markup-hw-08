@@ -30,9 +30,56 @@
     <header class="header">
         <div class="main-nav container">
     
-            <nav class="site-nav">
+            <nav class="header__logo">
                 <a class="logo" href=""><span class="logo__accent">Web</span>Studio</a>
+                <button class="menu-open-btn">
+                    <svg class="" width="24" height="16">
+                        <use href="./images/icons.svg#icon-menu"> </use>
+                    </svg>
+                </button>
     
+                <div class="backdrop is-hidden">
+                    <div class="mob-menu">
+                        <div class="mob-menu-content">
+                            <ul class="mod-menu-list">
+                                <li class="mod-menu-item">
+                                    <a href="./index.html" class="mod-menu-link">Студия</a>
+                                </li>
+                                <li class="mod-menu-item">
+                                    <a href="./portfolio.html" class="mod-menu-link">Портфолио</a>
+                                </li>
+                                <li class="mod-menu-item">
+                                    <a href="" class="mod-menu-link">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="mob-menu-bottom">
+                                <a href="tel:+380961111111" class="mob-menu-tel">+38 096 111 11 11</a>
+                                <a href="mailto:info@devstudio.com" class="mob-menu-email">info@devstudio.com</a>
+    
+                                <ul class="mod-menu-list-bottom">
+                                    <li class="mod-menu-item-bottom">
+                                        <a href="" class="mod-menu-link-bottom">Instagram</a>
+                                    </li>
+                                    <li class="mod-menu-item-bottom">
+                                        <a href="" class="mod-menu-link-bottom">Twitter</a>
+                                    </li>
+                                    <li class="mod-menu-item-bottom">
+                                        <a href="" class="mod-menu-link-bottom">Facebook</a>
+                                    </li>
+                                    <li class="mod-menu-item-bottom">
+                                        <a href="" class="mod-menu-link-bottom">LinkedIn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="menu-close-btn">
+                            <svg class="" width="19" height="19">
+                                <use href="./images/icons.svg#icon-menu-close"> </use>
+                            </svg>
+                        </button>
+    
+                    </div>
+                </div>
                 <ul class="site-nav">
                     <li class="site-nav__item">
                         <a class="site-nav__link" href="./index.html">Студия</a>
@@ -56,14 +103,15 @@
                 </li>
     
                 <li class="auth-nav__item">
-                    <a class="auth-nav__link" href="tel:+380961111111"><svg class="auth-nav__icon" width="10"
-                            height="16">
+                    <a class="auth-nav__link" href="tel:+380961111111"><svg class="auth-nav__icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
     
         </div>
+    
+    
     </header>
 
     <main>
@@ -276,7 +324,7 @@
     </main>
 
     <!-- Подвал сайта -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__container">
     
             <div class="footer__nav">
@@ -301,7 +349,7 @@
             </div>
     
             <div class="">
-                <h3 class="footer-list__titel">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                <h3 class="footer-list__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
     
                 <ul class="socials-list">
                     <li class="socials-list__item">
@@ -341,7 +389,7 @@
     
     
             <form class="footer-form">
-                <p class="footer-list__titel">Подпишитесь на рассылку</p>
+                <p class="footer-list__title">Подпишитесь на рассылку</p>
                 <div class="footer-form_box">
                     <label for="mail" class="footer-list__titel"></label>
                     <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer-form__input" />
@@ -351,7 +399,7 @@
                 </svg></button>
         </div>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 
