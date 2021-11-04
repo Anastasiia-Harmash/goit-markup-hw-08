@@ -1,14 +1,19 @@
 .modal {
   position: relative;
 
-  min-height: 581px;
-  min-width: 528px;
+  max-width: 450px;
+  max-height: 609px;
 
   border-radius: 4px;
 
   background-color: rgba(255, 255, 255, 1);
   box-shadow: var(--box-shadow);
   transition: transform 250ms var(--timing-function);
+
+  @media screen and (min-width: $desktop) {
+    min-height: 581px;
+    min-width: 528px;
+  }
 }
 
 .form {
@@ -100,8 +105,8 @@
 }
 
 .modal__checkbox {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
 
@@ -123,6 +128,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 

@@ -102,10 +102,6 @@
     color: var(--accent-text-color);
     fill: var(--accent-text-color);
   }
-  // @media screen and (min-width: $desktop) {
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
-  // }
 }
 
 .auth-nav__icon {
@@ -225,6 +221,7 @@
 .mod-menu-list-bottom {
   margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mod-menu-link-bottom {
