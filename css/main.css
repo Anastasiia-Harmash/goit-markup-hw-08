@@ -298,10 +298,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-nav {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding: 21px 0 21px 84px;
   }
 }
 
@@ -1200,6 +1197,7 @@ body {
   justify-content: center;
   transition: opacity 250ms var(--timing-function);
   background-color: rgba(0, 0, 0, 0.2);
+  z-index: 99;
 }
 
 .backdrop.is-hidden {

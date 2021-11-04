@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  // z-index: 2;
   border-bottom: 1px solid var(--primary-background-color);
 }
 
@@ -54,10 +55,7 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding: 21px 0 21px 84px;
   }
 
   @media screen and (min-width: $desktop) {
