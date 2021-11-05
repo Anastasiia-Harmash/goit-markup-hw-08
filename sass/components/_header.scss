@@ -16,13 +16,18 @@
 .header__logo {
   align-items: center;
   display: flex;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
   & > .logo {
     display: block;
 
     padding-top: 24px;
     padding-bottom: 25px;
 
-    margin-right: 93px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 93px;
+    }
   }
 }
 
@@ -55,7 +60,7 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    padding: 21px 0 21px 84px;
+    margin: 21px 0 21px 84px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -70,12 +75,13 @@
 
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     &:not(:last-child) {
-      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
   }
   @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
+
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -127,12 +133,6 @@
   }
 }
 
-.mob-menu__open-btn {
-  position: absolute;
-  top: 21px;
-  right: 15px;
-}
-
 .mob-menu__open-btn,
 .mod-menu-close-btn {
   width: 40px;
@@ -173,7 +173,6 @@
 }
 
 .mod-menu__list {
-  margin-bottom: 302px;
   &:hover,
   :focus,
   :active {

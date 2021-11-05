@@ -15,7 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -32,12 +32,21 @@
   }
 
   @media screen and (min-width: 768px) {
-    min-width: 768px;
-    background-image: url(../images/hero-tab.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-tab.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero-tab@2x.jpg);
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-tab@2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -45,14 +54,18 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/herodes@2x.jpg);
+      background-image: linear-gradient(
+          to bottom,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/herodes@2x.jpg);
     }
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
     height: 600px;
   }
 }
