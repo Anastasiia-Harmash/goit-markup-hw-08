@@ -21,10 +21,15 @@
     }
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    flex-basis: calc(100% / 2 - var(--gallery-gap-magin));
-    margin-right: var(--gallery-gap-magin);
-    margin-bottom: var(--gallery-gap-magin);
+    width: 354px;
+    &:not(:last-child:nth-child(2n + 1)) {
+      margin-right: 30px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
+
   @media screen and (min-width: $desktop) {
     width: 370px;
     margin-right: 30px;
