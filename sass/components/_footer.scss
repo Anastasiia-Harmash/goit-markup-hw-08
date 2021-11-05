@@ -2,7 +2,7 @@
   padding: 60px 0px;
   background-color: var(--background-color);
 
-  @media screen and (min-width: $mobile) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -42,7 +42,7 @@
   & > li:not(:last-child) {
     margin-bottom: 9px;
   }
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     padding-bottom: 60px;
   }
 }
@@ -81,7 +81,7 @@
 }
 
 .footer-form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   padding-right: 16px;
@@ -104,6 +104,12 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: $tablet) {
+    width: 450px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
 }
 
 .footer-form_box {
@@ -125,7 +131,7 @@
 }
 
 .socials-list__footer {
-  @media screen and (min-width: $mobile) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     padding-bottom: 60px;
   }
 }

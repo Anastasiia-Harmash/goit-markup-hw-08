@@ -45,7 +45,7 @@
   color: var(--white-color);
   background-color: var(--accent-text-color);
 
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     margin: 20px auto auto auto;
   }
 
