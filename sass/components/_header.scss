@@ -155,10 +155,10 @@
 }
 
 .mob-menu {
-  max-width: 480px;
-  max-height: 796px;
-  // width: 100vw;
-  // height: 100vh;
+  // max-width: 480px;
+  // max-height: 796px;
+  width: 100vw;
+  height: 100vh;
   background-color: var(--white-color);
   padding: 10px 15px 48px 40px;
   display: flex;
